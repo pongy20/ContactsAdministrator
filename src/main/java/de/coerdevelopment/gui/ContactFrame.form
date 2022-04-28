@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="de.coerdevelopment.gui.ContactFrame">
+  <grid id="27dc6" binding="contentPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="811" height="528"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="f7e77" binding="sidePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="54654" binding="searchPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="42af7" class="javax.swing.JTextField" binding="txtSearch">
+                <constraints/>
+                <properties>
+                  <columns value="15"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <scrollpane id="a63c1" binding="contactsPanel">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <visible value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="8fd2" class="javax.swing.JList" binding="contactsList">
+                <constraints/>
+                <properties>
+                  <model>
+                    <item value="Eric Dupont"/>
+                    <item value="Edwin Schulz"/>
+                    <item value="Max Meier"/>
+                  </model>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="dbb9a" binding="centerPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="empty">
+          <size top="10" left="10" bottom="10" right="10"/>
+        </border>
+        <children>
+          <grid id="e15d6" binding="infoPanel" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none">
+              <size top="5" left="15" bottom="5" right="15"/>
+            </border>
+            <children>
+              <component id="265e9" class="javax.swing.JLabel" binding="lblPrename">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Vorname:"/>
+                </properties>
+              </component>
+              <component id="4586" class="javax.swing.JLabel" binding="lblLastname">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Nachname:"/>
+                </properties>
+              </component>
+              <component id="d73f2" class="javax.swing.JLabel" binding="lblMail">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Mail:"/>
+                </properties>
+              </component>
+              <component id="cb753" class="javax.swing.JTextField" binding="txtPrename">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="15"/>
+                  <editable value="false"/>
+                  <text value="Max"/>
+                </properties>
+              </component>
+              <component id="22941" class="javax.swing.JTextField" binding="txtLastname">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="15"/>
+                  <editable value="false"/>
+                  <text value="Mustermann"/>
+                </properties>
+              </component>
+              <component id="1fdbd" class="javax.swing.JTextField" binding="txtMail">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="30"/>
+                  <editable value="false"/>
+                  <text value="max.mustermann@mail.de"/>
+                </properties>
+              </component>
+              <component id="2a5c5" class="javax.swing.JLabel" binding="lblTel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Telefon:"/>
+                </properties>
+              </component>
+              <component id="9382a" class="javax.swing.JTextField" binding="txtTel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="15"/>
+                  <editable value="false"/>
+                  <text value="0128276173"/>
+                </properties>
+              </component>
+              <component id="7c166" class="javax.swing.JButton" binding="sendMailButton">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Mail senden"/>
+                </properties>
+              </component>
+              <component id="97bb" class="javax.swing.JLabel" binding="lblNote">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Notizen:"/>
+                </properties>
+              </component>
+              <component id="dbe85" class="javax.swing.JTextField" binding="txtNote">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="15"/>
+                  <editable value="false"/>
+                  <text value="Das ist eine Anmerkung"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="91cd5" class="javax.swing.JLabel" binding="lblFullname">
+            <constraints border-constraint="North"/>
+            <properties>
+              <font size="36" style="1"/>
+              <text value="Max Mustermann"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
